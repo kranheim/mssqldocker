@@ -1,15 +1,15 @@
-version: '3.2'
+version: '3.9'
 
 services:
   db:
     build: .
-    image: mcmoe/mssqldocker:v2017.CU20.0
+    image: knutra/mssqldocker:v2019
     environment:
       ACCEPT_EULA: Y
       SA_PASSWORD: 2astazeY
-      MSSQL_DB: dev
-      MSSQL_USER: Kobeissi
-      MSSQL_PASSWORD: 7ellowEl7akey
+      MSSQL_DB: TicketDB
+      MSSQL_USER: TicketAPI
+      MSSQL_PASSWORD: Pa5$w0rd
     ports:
       - "1433:1433"
     container_name: mssqldev
