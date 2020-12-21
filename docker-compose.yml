@@ -9,7 +9,7 @@ services:
       SA_PASSWORD: 2astazeY
       MSSQL_DB: TicketDB
       MSSQL_USER: TicketAPI
-      MSSQL_PASSWORD: Pa5$w0rd
+      MSSQL_PASSWORD: Pa5$w0rd!
     ports:
       - "1433:1433"
     container_name: mssqldev
